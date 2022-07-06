@@ -3,7 +3,8 @@
     <el-col :span="8.5" style="margin-top: 0px;">
       <el-card shadow="ho">
         <div class="box">
-          <img src="../assets/1.jpeg" alt="">
+          <!-- <img src="../assets/1.jpeg" alt=""> -->
+          <img src="@/assets/1.jpeg" alt="">
           <p class="adm1">Admin</p>
           <p class="adm2">超级管理员</p>
         </div>
@@ -80,14 +81,15 @@
 
  <script>
 // import axios from 'axios',
-import { getData } from '../api/data.js'
+// import { getData } from '../api/data.js'
+import { getData } from '@/api/data.js'
 import * as echarts from 'echarts'
 // import { objectToString } from '@vue/shared'
 export default {
-
+  
   data() {
     return {
-
+      name:'Home',
       tableData: [{
         name: 'OPPO',
         allbuy: '22000',
